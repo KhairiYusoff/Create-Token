@@ -8,7 +8,7 @@ pragma solidity ^0.4.21;
 import "./EIP20Interface.sol";
 
 
-contract KhairiCoin is EIP20Interface {
+contract KhairiCoin is EIP20Interface {  //this is the smart contract name
 
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
@@ -23,7 +23,7 @@ contract KhairiCoin is EIP20Interface {
     uint8 public decimals;                //How many decimals to show.
     string public symbol;                 //An identifier: eg SBX
 
-    function KhairiCoin (
+    function KhairiCoin (                 //this function same as contract name
         uint256 _initialAmount,
         string _tokenName,
         uint8 _decimalUnits,
